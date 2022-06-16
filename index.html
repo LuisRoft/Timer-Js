@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b52c967ffd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Timer | Platzi</title>
+</head>
+<body>
+    <main class="main">
+        <article class="card">
+            <header class="header__card">
+                <button type="button" id="chronometer-button" onclick="executeChronometer()"class="header__icons"><i class="fa-solid fa-clock"></i></button>
+                <button type="button" id="timer-button" onclick="executeTimer()" class="header__icons"><i class="fa-solid fa-hourglass-end"></i></button>
+                <button type="button" id="alerts-button" class="header__icons"><i class="fa-solid fa-apple-whole"></i></button>
+            </header>
+            <section class="chronometer__card" id="container">
+                <div class="chronometer-time__card">
+                    <p><span id="minutes">00</span>:<span id="seconds">00</span></p>
+                </div>
+                <div class="chronometer-buttons__card">
+                    <button onclick="startChronometer()" id="startButton" type="button">Start</button>
+                    <button onclick="stopChronometer()" type="button">Stop</button>
+                    <button onclick="restartChronometer()">Refresh</button>
+                </div>
+            </section>
+            <footer>
+                <h2 class="credits__card">By <a href="#">@LuisRoftl</a> 💻</h2>
+            </footer>
+        </article>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
