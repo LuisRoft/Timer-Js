@@ -106,7 +106,7 @@ function executeTimer() {
             <form onsubmit="startTimer()">
                 <input type="number" placeholder="Enter a number" name="minutesInput">
                 <input type="number" placeholder="Enter a number" name="secondsInput">
-                <input type="submit id="startButton" value="Start">
+                <input type="submit" id="startButton" value="Start">
             </form>
         </div>
     `;
